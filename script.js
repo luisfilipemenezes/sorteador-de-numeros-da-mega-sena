@@ -44,6 +44,12 @@ function clicar (){
     let numeros =  document.querySelector("#result")
     numeros.innerHTML = volante
 
+    if(volante.length >0){
+        let boaSorte = document.querySelector(".invisivel")
+        boaSorte.style.color = "black"
+    }
+    
+
     
 
 }
