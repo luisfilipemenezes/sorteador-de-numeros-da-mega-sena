@@ -9,7 +9,7 @@ function preenche (){
     valor.setAttribute("value" ,6)
 }
 
-function clicar (){
+function sortear (){
     let volante  =[]
     let cartao = document.querySelector("input")
     let qtd =  cartao.value
@@ -42,7 +42,7 @@ function clicar (){
     console.log(volante)
 
     let numeros =  document.querySelector("#result")
-    numeros.innerHTML = volante
+    numeros.value = volante
 
     if(volante.length >0){
         let boaSorte = document.querySelector(".invisivel")
