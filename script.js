@@ -15,7 +15,7 @@ function clicar (){
     let qtd =  cartao.value
 
     for (let i = 0 ; i < qtd ; i++){
-        let numero = (parseInt(Math.random() * 60))
+        let numero = (parseInt(Math.random() * 61))
         if (numero ==0){
             i--
         }
@@ -47,12 +47,6 @@ function clicar (){
     
 
 }
-
-
-
-
-
-
 
 
 
