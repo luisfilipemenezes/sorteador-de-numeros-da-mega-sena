@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="nav">
+
+            <div class="menu">
+                <h1 class="pad">BEM VINDO AO SORTEADOR DE NUMEROS PARA A MEGA-SENA</h1>
+
+                <div class="pad" >DIGITE QUANTOS NUMEROS VOCE VAI APOSTAR</div>
+
+                <div class="pad">
+                    <input  class = "input" type="number" min="6" max= "15" onclick="preenche()"> 
+                </div>
+                <div class="pad">
+                    <button class =  "enviar" onclick="clicar()">SORTEAR</button>
+                </div>
+
+                <div class="pad">
+                    <textarea name="" id="result" cols="30" rows="10" placeholder="RESULTADO" ></textarea>
+                </div>
+            
+            </div>
+            <script src="./programa.js"></script>
+        </div>
+    </div>
+</body>
+</html>
