@@ -6,33 +6,45 @@
     text-align: center;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+}
+
 .container{
     margin-top: 0;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgb(255, 255, 255);
 }
 
 .nav{
     display: flex;
     margin: auto;
-    width: 500px;
+    width: 40%;
     height: 100%;
-    background-color: rgb(243, 241, 241);
+    background-color: rgb(235, 235, 235);
 }
 
 .menu{
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(243, 241, 241);
     margin: auto;
     width: 100%;
-    height: 70%;
-    
+    height: 80%;  
+}
 
+.pad{
+    margin: auto;
+    display: flex;
+    flex: 1;
+}
+
+.padMenor{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5 !important;
 }
 
 h1{
@@ -40,41 +52,52 @@ h1{
     
 }
 
+textarea{
+    flex: 1;
+    height: 100%;
+}
+
+.titulo{
+    margin: auto;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.textosComuns{
+    margin: auto;
+    font-size: 25px;
+}
+
+.textosBotoes{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.invisivel{
+    color: rgb(235, 235, 235) ;
+    margin: auto;
+}
+
 .input{
-    
+    margin: auto;
     height: 50px;
     width: 100px;
 }
 
-div{ 
+
+.padinter{
+    flex: 1;
     display: flex;
-    font-size: 25px;
+    flex-direction: column;
+}
+
+#result{
+    margin: auto;
+    height: 50%;
     
 }
 
-.pad {
-    padding: 30px;
+.margin{
+    margin: auto;
 }
 
-
-#result{
-    display: flex;
-    width: 350px;
-    height: 100px;
-    border: none;
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.invisivel{
-    color:rgb(243, 241, 241);
-}
-
-
-
-#result , .enviar , .input{
-    padding: auto;
-    font-size: 20px;
-}
