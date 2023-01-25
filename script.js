@@ -14,6 +14,7 @@ function sortear (){
     let cartao = document.querySelector("input")
     let qtd =  cartao.value
 
+    if(qtd >= 6 && qtd <=15){
     for (let i = 0 ; i < qtd ; i++){
         let numero = (parseInt(Math.random() * 61))
         if (numero ==0){
@@ -42,7 +43,7 @@ function sortear (){
     }
     console.log(volante)
 
-    if(qtd >= 6 && qtd <=15){
+    
         let numeros =  document.querySelector("#result")
         numeros.value = volante
         if(volante.length >0){
