@@ -15,8 +15,13 @@ function clicar (){
     let qtd =  cartao.value
 
     for (let i = 0 ; i < qtd ; i++){
-        let numero = (parseInt(Math.random() * 20))
-        volante.push(numero)
+        let numero = (parseInt(Math.random() * 60))
+        if (numero ==0){
+            i--
+        }else{
+            volante.push(numero)
+        }
+        
     }
     console.log(volante)
 
@@ -27,5 +32,7 @@ function clicar (){
 
 }
 
-clicar()
+
+
+
 
