@@ -48,6 +48,7 @@ function sortear (){
         if(volante.length >0){
             let boaSorte = document.querySelector(".invisivel")
             boaSorte.style.color = "black"
+            boaSorte.innerHTML = "BOA SORTE"
         }
     }
     
