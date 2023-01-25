@@ -17,23 +17,40 @@
         <div class="nav">
 
             <div class="menu">
-                <h1 class="pad">BEM VINDO AO SORTEADOR DE NUMEROS PARA A MEGA-SENA</h1>
 
-                <div class="pad" >DIGITE QUANTOS NUMEROS VOCE VAI APOSTAR</div>
+                <div class="pad"> 
+                    <p class="titulo">
+                        SORTEADOR DE NUMEROS PARA A MEGA-SENA
+                    </p>
 
-                <div class="pad">
-                    <input  class = "input" type="number" min="6" max= "15" onclick="preenche()"> 
-                </div>
-                <div class="pad">
-                    <button class =  "enviar" onclick="clicar()">SORTEAR</button>
                 </div>
 
+                <div class="pad" > 
+                    <P class="textosComuns">
+                        DIGITE QUANTOS NUMEROS VOCÊ VAI APOSTAR
+                    </P>
+                </div>
                 <div class="pad">
-                    <textarea name="" id="result" cols="30" rows="10" placeholder="RESULTADO" ></textarea>
+                    <input class="input textosBotoes" type="number" onclick="preenche()" >
+                    
+                </div>
+                <div class="pad">
+                    <button onclick="sortear()"  class="margin"  >
+                        <p class="textosBotoes"    >SORTEAR</p> 
+                    </button>
+                    
                 </div>
 
-                <div>
-                    <p class="invisivel">BOA SORTE</p>
+                <div class="padinter">
+                    <input type="text" id="result" class="textosBotoes" placeholder="RESULTADO">
+                
+                </div>
+
+                <div class="padMenor">
+                    <p class="textosBotoes invisivel">
+                        BOA SORTE
+                    </p>
+                    
                 </div>
             
             </div>
