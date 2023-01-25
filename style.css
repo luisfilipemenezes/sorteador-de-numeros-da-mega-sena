@@ -53,7 +53,7 @@ div{
 }
 
 .pad {
-    padding: 20px;
+    padding: 30px;
 }
 
 
@@ -66,6 +66,10 @@ div{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+
+.invisivel{
+    color:rgb(243, 241, 241);
 }
 
 
