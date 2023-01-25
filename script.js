@@ -45,19 +45,24 @@ function sortear (){
     if(qtd >= 6 && qtd <=15){
         let numeros =  document.querySelector("#result")
         numeros.value = volante
+        if(volante.length >0){
+            let boaSorte = document.querySelector(".invisivel")
+            boaSorte.style.color = "black"
+        }
     }
     
 
-    if(volante.length >0){
-        let boaSorte = document.querySelector(".invisivel")
-        boaSorte.style.color = "black"
-    }
-
-    if(qtd<6 || qtd >15){
+    else if(qtd<6 || qtd >15){
         let numeros =  document.querySelector("#result");
         numeros.style.width = "80%"
+    
+        numeros.value = "NUMERO INVALIDO"
+        let info =  document.querySelector(".invisivel")
+        info.innerHTML = "DIGITE UM NUMERO ENTRE 6 E 15"
+        info.style.color = "orange"
+
         
-        numeros.value = "NUMERO INVALIDO(DIGITE UM NUMERO ENTRE 6 E 15)"
+        
     }
     
 
