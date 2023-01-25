@@ -42,15 +42,23 @@ function sortear (){
     }
     console.log(volante)
 
-    let numeros =  document.querySelector("#result")
-    numeros.value = volante
+    if(qtd >= 6 && qtd <=15){
+        let numeros =  document.querySelector("#result")
+        numeros.value = volante
+    }
+    
 
     if(volante.length >0){
         let boaSorte = document.querySelector(".invisivel")
         boaSorte.style.color = "black"
     }
-    
 
+    if(qtd<6 || qtd >15){
+        let numeros =  document.querySelector("#result");
+        numeros.style.width = "80%"
+        
+        numeros.value = "NUMERO INVALIDO(DIGITE UM NUMERO ENTRE 6 E 15)"
+    }
     
 
 }
