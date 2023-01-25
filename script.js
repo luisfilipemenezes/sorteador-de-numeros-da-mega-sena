@@ -18,8 +18,24 @@ function clicar (){
         let numero = (parseInt(Math.random() * 60))
         if (numero ==0){
             i--
-        }else{
-            volante.push(numero)
+        }
+        else{
+            let tamanho = volante.length
+            let podeAdcionar = true
+            if (tamanho >0){
+                for(let i = 0; i < tamanho;i++){
+                    if(numero == volante[i]){
+                        podeAdcionar = false
+                    }
+                }
+                if(podeAdcionar == true){
+                    volante.push(numero)
+                }
+
+            }else{
+                volante.push(numero)
+            }
+            
         }
         
     }
@@ -31,6 +47,10 @@ function clicar (){
     
 
 }
+
+
+
+
 
 
 
