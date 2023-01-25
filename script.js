@@ -17,15 +17,16 @@ function sortear (){
     for (let i = 0 ; i < qtd ; i++){
         let numero = (parseInt(Math.random() * 61))
         if (numero ==0){
-            i--
+            i -=1
         }
         else{
             let tamanho = volante.length
             let podeAdcionar = true
             if (tamanho >0){
-                for(let i = 0; i < tamanho;i++){
-                    if(numero == volante[i]){
+                for(let j = 0; j < tamanho;j++){
+                    if(numero == volante[j]){
                         podeAdcionar = false
+                        i-=1
                     }
                 }
                 if(podeAdcionar == true){
