@@ -45,7 +45,7 @@ function sortear (){
 
     
         let numeros =  document.querySelector("#result")
-        numeros.value = volante
+        numeros.value = volante.join(" ")
         if(volante.length >0){
             let boaSorte = document.querySelector(".invisivel")
             boaSorte.style.color = "black"
