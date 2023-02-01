@@ -14,33 +14,42 @@ function sortear (){
     let cartao = document.querySelector("input")
     let qtd =  cartao.value
 
+    let numeroFixo = document.querySelector(".NumeroFixo").value
+    console.log(numeroFixo);
+
     if(qtd >= 6 && qtd <=15){
-    for (let i = 0 ; i < qtd ; i++){
-        let numero = (parseInt(Math.random() * 61))
-        if (numero ==0){
-            i -=1
+
+        if(numeroFixo > 0 && numeroFixo<=60){
+
+            volante.push(numeroFixo)
+            qtd --
         }
-        else{
-            let tamanho = volante.length
-            let podeAdcionar = true
-            if (tamanho >0){
-                for(let j = 0; j < tamanho;j++){
-                    if(numero == volante[j]){
-                        podeAdcionar = false
-                        i-=1
+        for (let i = 0 ; i < qtd ; i++){
+            let numero = (parseInt(Math.random() * 61))
+            if (numero ==0){
+                i -=1
+            }
+            else{
+                let tamanho = volante.length
+                let podeAdcionar = true
+                if (tamanho >0){
+                    for(let j = 0; j < tamanho;j++){
+                        if(numero == volante[j]){
+                            podeAdcionar = false
+                            i-=1
+                        }
                     }
-                }
-                if(podeAdcionar == true){
+                    if(podeAdcionar == true){
+                        volante.push(numero)
+                    }
+
+                }else{
                     volante.push(numero)
                 }
-
-            }else{
-                volante.push(numero)
+                
             }
             
         }
-        
-    }
     console.log(volante)
 
     
