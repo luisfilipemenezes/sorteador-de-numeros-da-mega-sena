@@ -104,7 +104,7 @@ textarea{
 
 input , button{
     border: solid 5px rgb(148, 148, 148);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -128,8 +128,8 @@ input , button{
 @media(max-width:900px){
 
     .nav{
+        margin-top: 30px;
         display: flex;
-        margin: auto;
         width: 95%;
         height: 100%;
     }
@@ -149,7 +149,7 @@ input , button{
 
     .input{
         margin: auto;
-        height: 30px;
+        height: 40px;
         width: 100%;
     }
 
@@ -157,5 +157,15 @@ input , button{
         font-size: 20px;
         font-weight: bolder;
     }
+    .textosComuns{
+        font-size: 20px;
+    }
 
+    .titulo{
+        font-size: 25px;
+    }
+
+    input , button{
+        border: solid 4px rgb(148, 148, 148);
+    }
 }
